@@ -10,14 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var passwordDisplay: UIView!
 
+
+    @IBOutlet weak var passwordRevealed: UILabel!
+    
     
     let letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")"];
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         
     }
@@ -35,6 +36,8 @@ class ViewController: UIViewController {
             i+=1;
             print(newPassword);
         }
+        
+        self.passwordRevealed.text = newPassword;
         
         
         
