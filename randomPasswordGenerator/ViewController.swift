@@ -31,10 +31,8 @@ class ViewController: UIViewController {
         
         var i: Int = 1;
         while i < passWordSize{
-            print(i)
             newPassword += letters[Int.random(in: 0...limit)]
             i+=1;
-            print(newPassword);
         }
         
         self.passwordRevealed.text = newPassword;
