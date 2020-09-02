@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     @IBAction func generatePassword(_ sender: Any) {
 
         let limit: Int = letters.count-1;
-        let passWordSize: Int = 14;
+        let passWordSize: Int = 9;
         var newPassword: String = "";
         
         var i: Int = 1;
